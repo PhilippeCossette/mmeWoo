@@ -1,0 +1,53 @@
+/* Description.css */
+
+.description {
+    display: flex;
+    gap: var(--gap-between-element);
+    justify-content: center;
+    align-items: center;
+
+    margin-inline: var(--margin-inline-section);
+    margin-block: var(--margin-block-section);
+    
+
+    & > img {
+        width: clamp(260px, 100%, 600px);
+        border-radius: 10px;
+    }
+
+    & > .description__text {
+        max-width: 58ch;
+    }
+}
+
+.description__text > h2 {
+    font-family: Tusker;
+    letter-spacing: 1px;
+    font-size: var(--fontsize-h2);
+}
+
+.description__text > p {
+    font-family: Roboto, sans-serif;
+    font-size: var(--fontsize-paragraph);
+}
+
+.description--reverse {
+    flex-direction: row-reverse;
+
+    & h3 {
+        font-family: Roboto, sans-serif;
+        font-size: var(--fontsize-h3);
+    }
+
+}
+
+
+@media screen and (max-width: 900px) {
+    .description {
+        flex-direction: column;
+
+        & > .description__text {
+            text-align: center;
+        }
+    }
+}

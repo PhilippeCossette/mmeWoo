@@ -1,0 +1,33 @@
+/* general.css */
+@import url("./navigation.css");
+@import url("./variable.css");
+@import url("./button.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("./grid-menu.css");
+@import url("./description.css");
+@font-face {
+    font-family: "Tusker";
+    src: url(../fonts/tusker-grotesk-2600-semibold.ttf);
+}
+
+:root {
+    --margin-inline-section: 30px; 
+    --margin-block-section: 90px;
+    --fontsize-paragraph: clamp(18px, 2vw, 24px);
+    --gap-between-element: 30px;
+    --fontsize-h2: 48px;
+    --fontsize-h3: 28px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 1920px;
+    margin: auto auto;
+}
+
+
+

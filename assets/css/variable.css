@@ -1,0 +1,12 @@
+/* variable.css */
+
+.hideSection {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.2s, opacity 0.1s linear;
+  }
+
+  .hideMenu {
+    right: -100%;
+    visibility: hidden;
+  }

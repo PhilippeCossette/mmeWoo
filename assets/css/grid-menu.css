@@ -1,0 +1,59 @@
+/* Grid menu */
+
+.grid__menu {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(30ch ,1fr));
+    margin-block: var(--margin-block-section);
+    margin-inline: var(--margin-inline-section);
+}
+
+.menu__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    max-width: 100%;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in;
+    
+    & > a {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    & > h2 {
+        font-family: Tusker;
+        font-size: 36px;
+        color: white;
+        letter-spacing: 1px;
+        font-weight: 500;
+    }
+}
+
+.menu__item:hover {
+    transform: scale(1.009);
+}
+
+
+.grid__menu > .menu__items_food {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.336)), url("../img/food-menu.jpg");
+}
+
+.grid__menu > .menu__items_drink {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.336)), url("../img/drink-menu.jpg");
+}
+
+.grid__menu > .menu__items_order {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.336)), url("../img/order-online.jpg");
+}
+
+@media screen and (max-width: 840px) {
+    .grid__menu{
+        grid-template-columns: repeat(auto-fit, minmax(30ch , 1fr));
+    }
+}
